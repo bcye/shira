@@ -9,7 +9,7 @@ from requests_cache import CachedSession
 from .tagging import Tags, get_1x1_cover
 
 TIGER_SINGLE = "tiger:is_single:true"
-req = CachedSession("shira", expire_after=60)
+req = CachedSession("~/.shiradl/shira", expire_after=60)
 
 def parse_datestring(datestr: str):
 	"""parse YYYYMMDD or YYYY-MM-DD into { year: str, month: str, day: str }"""
